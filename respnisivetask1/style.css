@@ -17,7 +17,7 @@ body {
   background-color: #f8f8f8;
   position: relative;
   /* good practice to use parent relative */
-  padding:1px;
+  padding: 1px;
   /* i add padding beacause there is bug in css that if i give nav of
    main margin it drag main to along with us so to make them sepreate
     i igive padding to the maing so that there is gap between nav and 
@@ -25,62 +25,94 @@ body {
 } */
 }
 
-#nav{
-height : 10vh;
-width:100%;
-border-top:1px solid black;
-border-bottom: 1px solid black;
-margin-top:10px;
-display:flex;
-justify-content:space-between ;
-align-items:center;
+#nav {
+  height: 10vh;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#nav  h2{
-  height:100%;
-  width:22%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+#nav h2 {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-right: 1px solid black;
   font-size: 20px;
   font-weight: 500;
-  
-} 
+}
 
-#nav  h1{
-  height:100%;
-  width:20%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+#nav h1 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: monument;
 }
 
-#nav  h2:nth-last-child(1){
+#nav h2:nth-last-child(1) {
   width: 10%;
 }
 
 /* here center of hero section  */
 
-#center{
+#center {
   height: 90vh;
   width: 100%;
   padding: 5vh;
   background-color: aliceblue;
-  position:relative;
-
+  position: relative;
 }
 
- #content{
+#content {
   height: 100%;
   width: 100%;
-  position:relative;
-
+  position: relative;
 }
 
-#content video{
+#content video {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.overlay {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 33px;
+
+  padding: 3vw;
+}
+.over1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  color: #f8f8f8;
+  font-family: monument, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  & h1 {
+    font-size: 3vw;
+  }
+}
+
+.over2 {
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  & h3 {
+    font-size: 2vw;
+    font-weight: 600;
+    margin-top: 2vw;
+  }
 }
